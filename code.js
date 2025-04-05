@@ -3,7 +3,7 @@ function convertToAdjList(adjMatrix) {
     var adjList = new Array(vertexSize);
 
     
-    if (vertexSize == 0) {return adjList;}
+    //if (vertexSize == 0) {return adjList;}
 
     // put empty array in each slot in array
     for (var i = 0; i < vertexSize; i++) {
@@ -13,7 +13,7 @@ function convertToAdjList(adjMatrix) {
     // looking through whole matrix
     for (var i = 0; i < vertexSize; i++) {          // looking through first index (incoming vertex)
         for (var j = 0; j < vertexSize; j++) {      // looking through secon index (receiving vertex)
-            if (adjMatrx[i][j] != 0) {              // if edge exists 
+            if (adjMatrix[i][j] != 0) {              // if edge exists 
                 adjList[i].push(j);                 // add receiving vertex value to incoming vertex in list
             }
         }
