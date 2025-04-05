@@ -2,9 +2,6 @@ function convertToAdjList(adjMatrix) {
     var vertexSize = adjMatrix.length;
     var adjList = new Array(vertexSize);
 
-    
-    //if (vertexSize == 0) {return adjList;}
-
     // put empty array in each slot in array
     for (var i = 0; i < vertexSize; i++) {
         adjList[i] = [];
