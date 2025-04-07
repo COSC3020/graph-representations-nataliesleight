@@ -19,9 +19,9 @@ For runtime complexity:
 
 Creating the adjacency list takes V operations and then created an array within each spot in the array takes another V, making 2V total for the creation of the adjacency list. 
 
-Searching the matrix takes $V^2$ time as there are two for loops that run from 0 to V. For each inner loop an if statement checks if the edge exists, then adds the edge if it does which adds E.
+Searching the matrix takes $V^2$ time as there are two for loops that run from 0 to V. For each inner loop an if statement checks if the edge exists, then adds the edge if it does (which is constant time). 
 
-The total runtime complexity is $2V + V^2 + E$ and thus $T(V, E) ∈ Θ(V^2 + E)$ which relies on both the number of vertices and edges. 
+The total runtime complexity is $2V + V^2$ and thus $T(V, E) ∈ Θ(V^2)$ which relies on just the number of vertices. 
 
 Sources: 
 
